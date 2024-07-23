@@ -12,7 +12,7 @@ public class ModItem {
             DeferredRegister.create(ForgeRegistries.ITEMS, dwrLearningmod.MOD_ID);
 
     public static final RegistryObject<Item> MushroomBucket = ITEMS.register("mushroombucket",
-            () ->new Item(new Item.Properties()));
+            () ->new Item(new Item.Properties().stacksTo(1)));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
